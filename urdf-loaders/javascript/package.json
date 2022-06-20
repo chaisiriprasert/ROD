@@ -1,0 +1,58 @@
+{
+  "name": "urdf-loader",
+  "version": "0.4.2",
+  "description": "URDF Loader for THREE.js and webcomponent viewer",
+  "scripts": {
+    "start": "cd .. && static-server",
+    "build": "cd example && webpack",
+    "test": "jest",
+    "lint": "eslint *.js ./test/*.js",
+    "coverage": "nyc report --reporter=html & opn coverage/index.html"
+  },
+  "files": [
+    "URDFLoader.js",
+    "urdf-viewer-element.js",
+    "urdf-manipulator-element.js",
+    "example/index.js",
+    "example/dragAndDrop.js",
+    "example/styles.css"
+  ],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gkjohnson/urdf-loaders.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gkjohnson/urdf-loaders/issues"
+  },
+  "homepage": "https://github.com/gkjohnson/urdf-loaders#readme",
+  "keywords": [
+    "javascript",
+    "threejs",
+    "graphics",
+    "robotics",
+    "urdf",
+    "urdf-models",
+    "webcomponents"
+  ],
+  "peerDependencies": {
+    "three": "^0.94.0"
+  },
+  "devDependencies": {
+    "@webcomponents/webcomponentsjs": "^2.0.0",
+    "eslint": "^5.4.0",
+    "jest": "^23.5.0",
+    "jest-cli": "^23.5.0",
+    "nyc": "^12.0.2",
+    "opn-cli": "^3.1.0",
+    "puppeteer": "^1.7.0",
+    "puppeteer-to-istanbul": "^1.2.2",
+    "script-loader": "^0.7.0",
+    "static-server": "^3.0.0",
+    "three": "^0.94.0",
+    "threejs-model-loader": "0.0.1",
+    "wc-loader": "^1.1.12",
+    "webpack": "^3.5.3"
+  },
+  "dependencies": {}
+}

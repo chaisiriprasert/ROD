@@ -1,0 +1,268 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/bezr/ontologies/2021/9/untitled-ontology-22#"
+     xml:base="http://www.semanticweb.org/bezr/ontologies/2021/9/untitled-ontology-22"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:ROD="http://174.138.23.208/owl/ROD#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:FOAF="http://174.138.23.208/owl/FOAF#">
+    <owl:Ontology rdf:about="http://174.138.23.208/owl/ROD#"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://174.138.23.208/owl/ROD#hasDescription -->
+
+    <owl:ObjectProperty rdf:about="http://174.138.23.208/owl/ROD#hasDescription">
+        <rdfs:domain rdf:resource="http://174.138.23.208/owl/ROD#ObjectDescription"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://174.138.23.208/owl/ROD#hasGraspingStrategy -->
+
+    <owl:ObjectProperty rdf:about="http://174.138.23.208/owl/ROD#hasGraspingStrategy">
+        <rdfs:domain rdf:resource="http://174.138.23.208/owl/ROD#GraspingStrategy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://174.138.23.208/owl/ROD#hasLabel -->
+
+    <owl:ObjectProperty rdf:about="http://174.138.23.208/owl/ROD#hasLabel"/>
+    
+
+
+    <!-- http://174.138.23.208/owl/ROD#hasLearnt -->
+
+    <owl:ObjectProperty rdf:about="http://174.138.23.208/owl/ROD#hasLearnt"/>
+    
+
+
+    <!-- http://174.138.23.208/owl/ROD#hasPCD -->
+
+    <owl:ObjectProperty rdf:about="http://174.138.23.208/owl/ROD#hasPCD">
+        <rdfs:domain rdf:resource="http://174.138.23.208/owl/ROD#ObjectDescription"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://174.138.23.208/owl/ROD#hasTrained -->
+
+    <owl:ObjectProperty rdf:about="http://174.138.23.208/owl/ROD#hasTrained">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://174.138.23.208/owl/ROD#hasTrained"/>
+                <owl:someValuesFrom rdf:resource="http://174.138.23.208/owl/FOAF#Person"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://174.138.23.208/owl/ROD#hasTrained"/>
+                <owl:someValuesFrom rdf:resource="http://174.138.23.208/owl/ROD#RobotDescription"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://174.138.23.208/owl/FOAF#firstName -->
+
+    <owl:DatatypeProperty rdf:about="http://174.138.23.208/owl/FOAF#firstName"/>
+    
+
+
+    <!-- http://174.138.23.208/owl/ROD#hasDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://174.138.23.208/owl/ROD#hasDescription"/>
+    
+
+
+    <!-- http://174.138.23.208/owl/ROD#hasLabel -->
+
+    <owl:DatatypeProperty rdf:about="http://174.138.23.208/owl/ROD#hasLabel"/>
+    
+
+
+    <!-- http://174.138.23.208/owl/ROD#hasPCD -->
+
+    <owl:DatatypeProperty rdf:about="http://174.138.23.208/owl/ROD#hasPCD"/>
+    
+
+
+    <!-- http://174.138.23.208/owl/ROD#hasURDF -->
+
+    <owl:DatatypeProperty rdf:about="http://174.138.23.208/owl/ROD#hasURDF"/>
+    
+
+
+    <!-- http://174.138.23.208/owl/ROD#robotName -->
+
+    <owl:DatatypeProperty rdf:about="http://174.138.23.208/owl/ROD#robotName"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://174.138.23.208/owl/FOAF#Person -->
+
+    <owl:Class rdf:about="http://174.138.23.208/owl/FOAF#Person"/>
+    
+
+
+    <!-- http://174.138.23.208/owl/ROD#GraspingStrategy -->
+
+    <owl:Class rdf:about="http://174.138.23.208/owl/ROD#GraspingStrategy"/>
+    
+
+
+    <!-- http://174.138.23.208/owl/ROD#ObjectDescription -->
+
+    <owl:Class rdf:about="http://174.138.23.208/owl/ROD#ObjectDescription"/>
+    
+
+
+    <!-- http://174.138.23.208/owl/ROD#RobotDescription -->
+
+    <owl:Class rdf:about="http://174.138.23.208/owl/ROD#RobotDescription"/>
+    
+
+
+    <!-- http://174.138.23.208/owl/SUMO#Artifact -->
+
+    <owl:Class rdf:about="http://174.138.23.208/owl/SUMO#Artifact"/>
+    
+
+
+    <!-- http://174.138.23.208/owl/SUMO#Bottle -->
+
+    <owl:Class rdf:about="http://174.138.23.208/owl/SUMO#Bottle">
+        <rdfs:subClassOf rdf:resource="http://174.138.23.208/owl/SUMO#FluidContainer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://174.138.23.208/owl/SUMO#DrinkingCup -->
+
+    <owl:Class rdf:about="http://174.138.23.208/owl/SUMO#DrinkingCup">
+        <rdfs:subClassOf rdf:resource="http://174.138.23.208/owl/SUMO#FluidContainer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://174.138.23.208/owl/SUMO#FluidContainer -->
+
+    <owl:Class rdf:about="http://174.138.23.208/owl/SUMO#FluidContainer">
+        <rdfs:subClassOf rdf:resource="http://174.138.23.208/owl/SUMO#Artifact"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://174.138.23.208/owl/ROD#GraspingCoke -->
+
+    <owl:NamedIndividual rdf:about="http://174.138.23.208/owl/ROD#GraspingCoke">
+        <rdf:type rdf:resource="http://174.138.23.208/owl/ROD#GraspingStrategy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://174.138.23.208/owl/ROD#GraspingStarbuckCup -->
+
+    <owl:NamedIndividual rdf:about="http://174.138.23.208/owl/ROD#GraspingStarbuckCup">
+        <rdf:type rdf:resource="http://174.138.23.208/owl/ROD#GraspingStrategy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://174.138.23.208/owl/ROD#PersonA -->
+
+    <owl:NamedIndividual rdf:about="http://174.138.23.208/owl/ROD#PersonA">
+        <rdf:type rdf:resource="http://174.138.23.208/owl/FOAF#Person"/>
+        <ROD:hasTrained rdf:resource="http://174.138.23.208/owl/ROD#RobotA"/>
+        <FOAF:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parkpoom</FOAF:firstName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://174.138.23.208/owl/ROD#RobotA -->
+
+    <owl:NamedIndividual rdf:about="http://174.138.23.208/owl/ROD#RobotA">
+        <rdf:type rdf:resource="http://174.138.23.208/owl/ROD#RobotDescription"/>
+        <ROD:hasLearnt rdf:resource="http://174.138.23.208/owl/ROD#StarbuckCup"/>
+        <ROD:hasLearnt rdf:resource="http://174.138.23.208/owl/ROD#coke"/>
+        <ROD:hasURDF rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://174.138.23.208/urdf/arm.urdf</ROD:hasURDF>
+        <ROD:robotName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Robot Arm</ROD:robotName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://174.138.23.208/owl/ROD#StarbuckCup -->
+
+    <owl:NamedIndividual rdf:about="http://174.138.23.208/owl/ROD#StarbuckCup">
+        <rdf:type rdf:resource="http://174.138.23.208/owl/ROD#ObjectDescription"/>
+        <rdf:type rdf:resource="http://174.138.23.208/owl/SUMO#DrinkingCup"/>
+        <ROD:hasGraspingStrategy rdf:resource="http://174.138.23.208/owl/ROD#GraspingStarbuckCup"/>
+        <ROD:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Starbuck Cup 20 oz.</ROD:hasDescription>
+        <ROD:hasLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coffee Mug</ROD:hasLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://174.138.23.208/owl/ROD#coke -->
+
+    <owl:NamedIndividual rdf:about="http://174.138.23.208/owl/ROD#coke">
+        <rdf:type rdf:resource="http://174.138.23.208/owl/ROD#ObjectDescription"/>
+        <rdf:type rdf:resource="http://174.138.23.208/owl/SUMO#Bottle"/>
+        <ROD:hasGraspingStrategy rdf:resource="http://174.138.23.208/owl/ROD#GraspingCoke"/>
+        <ROD:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coke Zero 500 ml.</ROD:hasDescription>
+        <ROD:hasLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">water_bottle</ROD:hasLabel>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
